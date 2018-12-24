@@ -7,7 +7,6 @@
     <version>0.1</version>
     <relativePath>../../pom.xml</relativePath>
   </parent>
-  
   <artifactId>web1</artifactId>
   <packaging>war</packaging>
   <!-- FIXME change it to the project's website -->
@@ -54,7 +53,7 @@
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
       <version>2.3.0</version>
-      <scope>runtime</scope>
+      <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>com.ss</groupId>

@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-@Controller()
+@Controller
 @RequestMapping("/hello")
 public class HelloController {
 
     private static Logger LOGGER = LoggerFactory.getLogger(HelloController.class);
 
-    @RequestMapping("/sayHello")
+    @RequestMapping(value = "/sayHello")
     public @ResponseBody User sayHello(@RequestBody String name) {
-        LOGGER.info("name in sayHello", name);
+        LOGGER.info("name in sayHello: " + name);
         User user = new User();
-        user.setName(name);
+        user.setName(name.toUpperCase());
         return user;
     }
 

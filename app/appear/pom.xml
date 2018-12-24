@@ -52,6 +52,7 @@
                     <version>6</version>
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
                     <skinnyWars>true</skinnyWars>
+                    <generateModuleId>true</generateModuleId>
                     <modules>
                         <webModule>
                             <groupId>com.ss</groupId>
@@ -63,6 +64,23 @@
                         </jarModule>
                     </modules>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>2.0.0.Final</version>
+                <configuration>
+                    <force>true</force>
+                    <filename>${project.build.finalName}.ear</filename>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
