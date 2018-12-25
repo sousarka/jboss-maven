@@ -25,4 +25,11 @@ public class UserService {
         users.add(user);
     }
 
+    /**
+     * @return the users
+     */
+    public Set<User> getUsers() {
+        return users;
+    }
+
 }
