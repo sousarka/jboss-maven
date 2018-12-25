@@ -2,4 +2,6 @@ appear/target/
 business/target/
 web1/target/
 app/
+test/unit-test/target/
+test/intg-test/target/
 .DS_Store

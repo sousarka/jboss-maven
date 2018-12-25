@@ -37,6 +37,16 @@
         "isDefault": true
       },
       "problemMatcher": []
+    },
+    {
+      "label": "run test",
+      "type": "shell",
+      "command": "mvn clean test -e",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
     }
   ]
 }

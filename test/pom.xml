@@ -2,12 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ss</groupId>
-  <artifactId>app</artifactId>
   <version>0.1</version>
+  <artifactId>test</artifactId>
   <packaging>pom</packaging>
   <modules>
-    <module>business</module>
-    <module>web1</module>
-    <module>appear</module>
+    <module>intg-test</module>
+    <module>unit-test</module>
   </modules>
 </project>
