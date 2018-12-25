@@ -1,4 +1,4 @@
-package com.ss;
+package com.ss.intgtest;
 
 import static org.junit.Assert.assertTrue;
 

@@ -3,5 +3,5 @@ business/target/
 web1/target/
 app/
 test/unittest/target/
-test/intg-test/target/
+test/intgtest/target/
 .DS_Store

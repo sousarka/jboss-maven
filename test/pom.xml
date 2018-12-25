@@ -23,7 +23,7 @@
   </dependencyManagement>
 
   <modules>
-    <module>intg-test</module>
+    <module>intgtest</module>
     <module>unittest</module>
   </modules>
 </project>

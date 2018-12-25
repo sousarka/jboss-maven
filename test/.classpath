@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="intg-test/target/test-classes" path="intg-test/src/test">
+	<classpathentry kind="src" output="intgtest/target/test-classes" path="intgtest/src/test">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
@@ -33,7 +33,7 @@
 			<attribute name="test" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" output="intg-test/target/test-classes" path="intg-test/target/generated-test-sources/test-annotations">
+	<classpathentry kind="src" output="intgtest/target/test-classes" path="intgtest/target/generated-test-sources/test-annotations">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
