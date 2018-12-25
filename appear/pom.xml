@@ -4,7 +4,7 @@
         <groupId>com.ss</groupId>
         <artifactId>app</artifactId>
         <version>0.1</version>
-        <relativePath>../../pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>appear</artifactId>

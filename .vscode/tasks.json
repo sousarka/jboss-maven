@@ -20,7 +20,7 @@
       "problemMatcher": [],
       "args": [
         "-Djboss.server.base.dir=C:/JBOSSEAP-7.1.0/standalone_maven/",
-        "--server-config=../../../Users/040194/Documents/gitrepos/jboss-maven/app/appear/src/main/application/standalone.xml",
+        "--server-config=../../../Users/040194/Documents/gitrepos/jboss-maven/appear/src/main/application/standalone.xml",
         "-Djboss.home.dir=C:/JBOSSEAP-7.1.0"
       ]
     },
