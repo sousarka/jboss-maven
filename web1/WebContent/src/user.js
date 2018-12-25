@@ -1,20 +1,51 @@
 // @ts-check
 
-function getUser() {
-  fetch("http://localhost:8080/web1/controller/hello/sayHello", {
+function findUser() {
+  // @ts-ignore
+  let userName = document.getElementById("userName").value;
+  document.getElementById("message").innerHTML = "";
+  if (!userName || !userName.trim().length) {
+    return;
+  }
+
+  fetch("http://localhost:8080/web1/controller/users/findByName", {
     method: "POST",
     credentials: "same-origin",
     headers: { "Content-Type": "application/json" },
-    // @ts-ignore
-    body: document.getElementById("userName").value
+    body: userName
   })
     .then(response => response.json())
-    .then(user => {
-      document.getElementById("userInfo").innerHTML = user.name;
+    .then(result => {
+      document.getElementById("message").innerHTML = result.message;
     })
-    .catch(error => {});
+    .catch(error => { });
+}
+
+function addUser() {
+  // @ts-ignore
+  let userName = document.getElementById("userName").value;
+  document.getElementById("message").innerHTML = "";
+  if (!userName || !userName.trim().length) {
+    return;
+  }
+
+  fetch("http://localhost:8080/web1/controller/users/addUser", {
+    method: "POST",
+    credentials: "same-origin",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name: userName })
+  })
+    .then(response => response.json())
+    .then(result => {
+      document.getElementById("message").innerHTML = result.message;
+    })
+    .catch(error => { });
 }
 
 document
-  .getElementById("sayHelloBtn")
-  .addEventListener("click", () => getUser());
+  .getElementById("findUserBtn")
+  .addEventListener("click", () => findUser());
+
+document
+  .getElementById("addUserBtn")
+  .addEventListener("click", () => addUser());
