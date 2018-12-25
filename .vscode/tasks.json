@@ -4,19 +4,23 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "test",
+      "label": "start server osx",
       "type": "shell",
-      "command": "mvn -B test",
-      "group": "test"
+      "command": "./standalone.sh",
+      "options": {
+        "cwd": "/Users/soumik/EAP-7.1.0/bin"
+      },
+      "group": "none",
+      "problemMatcher": []
     },
     {
-      "label": "start server",
+      "label": "start server windows",
       "type": "shell",
       "command": "standalone.bat",
       "options": {
         "cwd": "C:/JBOSSEAP-7.1.0/bin"
       },
-      "group": "build",
+      "group": "none",
       "problemMatcher": [],
       "args": [
         "-Djboss.server.base.dir=C:/JBOSSEAP-7.1.0/standalone_maven/",
