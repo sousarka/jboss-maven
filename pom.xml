@@ -6,8 +6,8 @@
   <packaging>pom</packaging>
   <name>jboss-app</name>
   <modules>
-    <module>jar/business</module>
-    <module>war1/web1</module>
+    <module>business</module>
+    <module>web1</module>
     <module>app/appear</module>
   </modules>
 </project>

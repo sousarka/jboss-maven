@@ -1,0 +1,48 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "web1",
+                "projectName": "web1",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/web1",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            },
+            {
+                "name": "business",
+                "projectName": "business",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/jar/business",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "web1",
+                "projectName": "web1",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/web1",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            },
+            {
+                "name": "business",
+                "projectName": "business",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/jar/business",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
