@@ -2,10 +2,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - App",
-            "request": "launch",
-            "mainClass": "com.ss.business.App",
-            "projectName": "business"
+            "name": "Jboss App - App",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 8787
+            
         }
     ]
 }

@@ -6,7 +6,7 @@ function getUser() {
     credentials: "same-origin",
     headers: { "Content-Type": "application/json" },
     // @ts-ignore
-    body: JSON.stringify(document.getElementById("userName").value)
+    body: document.getElementById("userName").value
   })
     .then(response => response.json())
     .then(user => {
