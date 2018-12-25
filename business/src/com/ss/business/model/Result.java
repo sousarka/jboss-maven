@@ -1,8 +1,8 @@
 package com.ss.business.model;
 
 public class Result<T> {
-    T retObject;
-    String message;
+    private T retObject;
+    private String message;
 
     /**
      * @return the retObject
