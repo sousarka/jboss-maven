@@ -1,12 +1,13 @@
- package com.ss.unittest;
+ package com.ss.user;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
-import org.junit.*;
-
 import com.ss.business.model.User;
 import com.ss.business.service.UserService;
+
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * Unit test for UserService.

@@ -3,6 +3,24 @@
         "default": "",
         "items": [
             {
+                "name": "test",
+                "projectName": "test",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/test",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            },
+            {
+                "name": "unittest",
+                "projectName": "unittest",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/test/unittest",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            },
+            {
                 "name": "web1",
                 "projectName": "web1",
                 "workingDirectory": "/Users/soumik/development/jboss-maven/web1",
@@ -14,7 +32,16 @@
             {
                 "name": "business",
                 "projectName": "business",
-                "workingDirectory": "/Users/soumik/development/jboss-maven/jar/business",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/business",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            },
+            {
+                "name": "intgtest",
+                "projectName": "intgtest",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/test/intgtest",
                 "args": [],
                 "vmargs": [],
                 "env": {},
@@ -26,6 +53,24 @@
         "default": "",
         "items": [
             {
+                "name": "test",
+                "projectName": "test",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/test",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            },
+            {
+                "name": "unittest",
+                "projectName": "unittest",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/test/unittest",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            },
+            {
                 "name": "web1",
                 "projectName": "web1",
                 "workingDirectory": "/Users/soumik/development/jboss-maven/web1",
@@ -37,7 +82,16 @@
             {
                 "name": "business",
                 "projectName": "business",
-                "workingDirectory": "/Users/soumik/development/jboss-maven/jar/business",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/business",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            },
+            {
+                "name": "intgtest",
+                "projectName": "intgtest",
+                "workingDirectory": "/Users/soumik/development/jboss-maven/test/intgtest",
                 "args": [],
                 "vmargs": [],
                 "env": {},
