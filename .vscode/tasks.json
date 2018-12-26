@@ -39,13 +39,20 @@
       "problemMatcher": []
     },
     {
-      "label": "run test",
+      "label": "run unit test",
       "type": "shell",
       "command": "mvn clean test -e",
       "group": {
         "kind": "test",
         "isDefault": true
       },
+      "problemMatcher": []
+    },
+    {
+      "label": "run integration test",
+      "type": "shell",
+      "command": "mvn clean test -DskipTests=false -f ${workspaceFolder}/test/intgtest/pom.xml",
+      "group": "test",
       "problemMatcher": []
     }
   ]
