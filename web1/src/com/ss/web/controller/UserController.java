@@ -28,7 +28,7 @@ public class UserController {
     @RequestMapping(value = "/findByName")
     public @ResponseBody Result<User> findByName(@RequestBody String name) {
         Result<User> result = new Result<>();
-        LOGGER.info("getUserByName : " + name);
+        LOGGER.info("getUserByName : {}", name);
         User user = userService.findByName(name);
         if (user == null) {
             result.setMessage(messageSource.getMessage("user.not.found", new Object[] {name}, Locale.US));
@@ -42,7 +42,7 @@ public class UserController {
     @RequestMapping(value = "/addUser")
     public @ResponseBody Result<Void> addUser(@RequestBody User user) {
         Result<Void> result = new Result<>();
-        LOGGER.info("addUser : " + user);
+        LOGGER.info("addUser : {}", user);
         userService.addUser(user);
         result.setMessage(messageSource.getMessage("user.added", null, Locale.US));
         return result;

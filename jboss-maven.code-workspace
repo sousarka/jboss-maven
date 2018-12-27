@@ -8,6 +8,9 @@
     "vscodeAdapters.showChannelOnServerOutput": true,
     "java.configuration.updateBuildConfiguration": "automatic",
     "java.saveActions.organizeImports": true,
-    "terminal.integrated.shell.windows": "C:\\Windows\\system32\\cmd.exe"
+    "terminal.integrated.shell.windows": "C:\\Windows\\system32\\cmd.exe",
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.copyOnSelection": true
   }
 }

@@ -51,7 +51,7 @@
     {
       "label": "run integration test",
       "type": "shell",
-      "command": "mvn clean test -DskipTests=false -f ${workspaceFolder}/test/intgtest/pom.xml",
+      "command": "mvn clean test -DskipITests=false -f ${workspaceFolder}/test/intgtest/pom.xml",
       "group": "test",
       "problemMatcher": []
     }
