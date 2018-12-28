@@ -29,7 +29,7 @@
       ]
     },
     {
-      "label": "ear install",
+      "label": "app1 install",
       "type": "shell",
       "command": "mvn clean install -P app1 -e",
       "group": {
