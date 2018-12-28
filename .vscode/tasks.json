@@ -31,11 +31,18 @@
     {
       "label": "ear install",
       "type": "shell",
-      "command": "mvn clean install -e",
+      "command": "mvn clean install -P app1 -e",
       "group": {
         "kind": "build",
         "isDefault": true
       },
+      "problemMatcher": []
+    },
+    {
+      "label": "app2 install",
+      "type": "shell",
+      "command": "mvn clean install -P app2 -e",
+      "group": "build",
       "problemMatcher": []
     },
     {
