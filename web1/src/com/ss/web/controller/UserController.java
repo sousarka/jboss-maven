@@ -4,6 +4,7 @@ import java.util.Locale;
 
 import com.ss.business.model.Result;
 import com.ss.business.model.User;
+import com.ss.business.service.DroolsService;
 import com.ss.business.service.UserService;
 
 import org.slf4j.Logger;
@@ -24,6 +25,8 @@ public class UserController {
     private UserService userService;
     @Autowired
     private MessageSource messageSource;
+    @Autowired
+    private DroolsService droolsService;
 
     @RequestMapping(value = "/findByName")
     public @ResponseBody Result<User> findByName(@RequestBody String name) {
@@ -45,6 +48,15 @@ public class UserController {
         LOGGER.info("addUser : {}", user);
         userService.addUser(user);
         result.setMessage(messageSource.getMessage("user.added", null, Locale.US));
+        return result;
+    }
+
+    @RequestMapping(value = "/greetUser")
+    public @ResponseBody Result<Void> greetUser(@RequestBody String name) {
+        LOGGER.info("greetUser : {}", name);
+        User user = new User();
+        user.setName(name);
+        Result<Void> result = droolsService.greetUser(user);
         return result;
     }
 

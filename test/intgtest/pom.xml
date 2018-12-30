@@ -12,7 +12,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <skipITests>true</skipITests>
+    
   </properties>
   <build>
     <testSourceDirectory>${project.basedir}/src/test</testSourceDirectory>
@@ -35,7 +35,6 @@
           <configuration>
             <parallel>methods</parallel>
             <threadCount>10</threadCount>
-            <skipITs>${skipITests}</skipITs>
           </configuration>
         </plugin>
       </plugins>

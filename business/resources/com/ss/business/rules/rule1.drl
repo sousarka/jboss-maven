@@ -1,0 +1,29 @@
+package com.ss.business.rules;
+
+import com.ss.business.model.User;
+import com.ss.business.model.Result;
+
+rule "Hello"
+    when
+        $u : User( name == "abc" )
+        $r : Result ()
+    then
+        $r.setMessage("Hello " + $u.getName());
+end
+
+rule "Bye"
+    when
+        $u: User( name == "xyz" )
+        $r : Result ()
+    then
+        $r.setMessage("Bye " + $u.getName());
+end
+
+rule "unknownUser"
+    when
+        User( name != "abc" && name != "xyz")
+        $r : Result ()
+    then
+        $r.setMessage( "Sorry, I dont know you");
+end
+

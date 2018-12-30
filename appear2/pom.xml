@@ -17,7 +17,6 @@
             <groupId>com.ss</groupId>
             <artifactId>business</artifactId>
             <version>0.1</version>
-            <type>jar</type>
         </dependency>
         <dependency>
             <groupId>com.ss</groupId>

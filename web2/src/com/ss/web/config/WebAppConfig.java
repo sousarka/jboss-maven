@@ -20,7 +20,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.ss.web.controller", "com.ss.business" })
+@ComponentScan(basePackages = { "com.ss.web.controller" })
 @Import(CommonConfig.class)
 public class WebAppConfig {
 
