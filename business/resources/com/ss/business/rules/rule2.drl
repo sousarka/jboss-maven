@@ -3,27 +3,19 @@ package com.ss.business.rules;
 import com.ss.business.model.User;
 import com.ss.business.model.Result;
 
-rule "Hello1"
+rule "Hello2"
     when
-        $u : User( name == "abc" )
+        $u : User( name == "123" )
         $r : Result ()
     then
         $r.setMessage("Hello " + $u.getName());
 end
 
-rule "Bye1"
+rule "Bye2"
     when
-        $u: User( name == "xyz" )
+        $u: User( name == "456" )
         $r : Result ()
     then
         $r.setMessage("Bye " + $u.getName());
-end
-
-rule "unknownUser1"
-    when
-        User( name != "abc" && name != "xyz" && name !="123" && name !="456")
-        $r : Result ()
-    then
-        $r.setMessage( "Sorry, I dont know you");
 end
 

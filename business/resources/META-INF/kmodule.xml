@@ -2,7 +2,7 @@
 <kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://www.drools.org/xsd/kmodule">
 
-    <kbase name="base">
-        <ksession default="true" name="appKSession" />
+    <kbase name="base" default="true">
+        <ksession default="true" type="stateless" name="appKSession" />
     </kbase>
 </kmodule>

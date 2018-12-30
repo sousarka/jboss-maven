@@ -2,11 +2,12 @@ package com.ss.business.config;
 
 import org.kie.api.KieServices;
 import org.kie.api.runtime.KieContainer;
-import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.StatelessKieSession;
 import org.kie.spring.annotations.KModuleAnnotationPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 
 @Configuration
@@ -24,8 +25,9 @@ public class CommonConfig {
     }
     
     @Bean
-    public KieSession appKSession(KieContainer kieContainer) {
-        return kieContainer.newKieSession("appKSession");
+    @Scope("prototype")
+    public StatelessKieSession appKSession(KieContainer kieContainer) {
+        return kieContainer.newStatelessKieSession("appKSession");
     }
 
     @Bean

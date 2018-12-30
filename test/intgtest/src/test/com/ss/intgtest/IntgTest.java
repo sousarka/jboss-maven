@@ -1,9 +1,9 @@
 package com.ss.intgtest;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
-import com.ss.business.model.Result;
 import com.ss.business.model.User;
 import com.ss.business.service.DroolsService;
 import com.ss.business.service.UserService;
@@ -44,7 +44,9 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
     {
         User user = new User();
         user.setName("Harry");
-        Result<Void> result = droolsService.greetUser(user);
-        assertEquals(result.getMessage(), "Sorry, I dont know you");
+        assertEquals(droolsService.greetUser(user).getMessage(), "Sorry, I dont know you");
+        user.setName("abc");
+        assertNotEquals(droolsService.greetUser(user).getMessage(), "Sorry, I dont know you");
+        assertEquals(droolsService.greetUser(user).getMessage(), "Hello abc");
     }
 }

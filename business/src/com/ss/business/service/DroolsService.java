@@ -1,11 +1,12 @@
 package com.ss.business.service;
 
+import java.util.Arrays;
+
 import com.ss.business.model.Result;
 import com.ss.business.model.User;
 
 import org.kie.api.cdi.KSession;
-import org.kie.api.runtime.KieSession;
-import org.kie.api.runtime.rule.FactHandle;
+import org.kie.api.runtime.StatelessKieSession;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,15 +16,11 @@ import org.springframework.stereotype.Service;
 public class DroolsService {
 
     @KSession("appKSession")
-    private KieSession appKSession;
+    private StatelessKieSession appKSession;
 
     public Result<Void> greetUser(User user) {
         Result<Void> result = new Result<>();
-        FactHandle fu = appKSession.insert(user);
-        FactHandle fr = appKSession.insert(result);
-        appKSession.fireAllRules();
-        appKSession.delete(fu);
-        appKSession.delete(fr);
+        appKSession.execute(Arrays.asList(new Object[] {user, result}));
         return result;
     }
 
