@@ -7,7 +7,6 @@ import org.kie.spring.annotations.KModuleAnnotationPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Scope;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 
 @Configuration
@@ -25,7 +24,6 @@ public class CommonConfig {
     }
     
     @Bean
-    @Scope("prototype")
     public StatelessKieSession appKSession(KieContainer kieContainer) {
         return kieContainer.newStatelessKieSession("appKSession");
     }
