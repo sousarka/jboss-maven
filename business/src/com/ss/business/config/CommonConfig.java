@@ -15,7 +15,7 @@ import org.springframework.context.support.ReloadableResourceBundleMessageSource
 public class CommonConfig {
 
     @Bean
-    public KModuleAnnotationPostProcessor kiePostProcessor() {
+    public static KModuleAnnotationPostProcessor kiePostProcessor() {
         return new  KModuleAnnotationPostProcessor();
     }
 
