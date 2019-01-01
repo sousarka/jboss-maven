@@ -48,5 +48,8 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
         user.setName("abc");
         assertNotEquals(droolsService.greetUser(user).getMessage(), "Sorry, I dont know you");
         assertEquals(droolsService.greetUser(user).getMessage(), "Hello abc");
+
+        user.setName("123");
+        assertEquals(droolsService.greetUser(user).getMessage(), "Hello 123");
     }
 }

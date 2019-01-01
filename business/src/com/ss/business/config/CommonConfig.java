@@ -24,8 +24,13 @@ public class CommonConfig {
     }
     
     @Bean
-    public StatelessKieSession appKSession(KieContainer kieContainer) {
-        return kieContainer.newStatelessKieSession("appKSession");
+    public StatelessKieSession session1(KieContainer kieContainer) {
+        return kieContainer.newStatelessKieSession("session1");
+    }
+
+    @Bean
+    public StatelessKieSession session2(KieContainer kieContainer) {
+        return kieContainer.newStatelessKieSession("session2");
     }
 
     @Bean

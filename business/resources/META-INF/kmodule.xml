@@ -2,7 +2,10 @@
 <kmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://www.drools.org/xsd/kmodule">
 
-    <kbase name="base" default="true">
-        <ksession default="true" type="stateless" name="appKSession" />
+    <kbase name="base1" packages="com.ss.business.rules1">
+        <ksession default="true" type="stateless" name="session1" />
+    </kbase>
+    <kbase name="base2" packages="com.ss.business.rules2">
+        <ksession default="true" type="stateless" name="session2" />
     </kbase>
 </kmodule>
